@@ -1,26 +1,53 @@
 @import "tailwindcss";
+@import "../styles/theme.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--color-background);
+  --foreground: var(--color-foreground);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-inter), system-ui, sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Inter Bold for headings (per brand) */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.55) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff !important;
+}
+
+/* Navbar & footer – same link styling */
+.nav-link {
+  color: var(--color-nav-link);
+}
+.nav-link:hover {
+  color: var(--color-nav-link-hover);
+}
+header nav a[href] {
+  color: var(--color-nav-link);
+}
+header nav a[href]:hover {
+  color: var(--color-nav-link-hover);
+}
+footer .nav-link {
+  color: var(--color-nav-link);
+}
+footer .nav-link:hover {
+  color: var(--color-nav-link-hover);
 }

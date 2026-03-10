@@ -1,0 +1,69 @@
+/* Trail Aerospace – logo palette (logo-with-name-transparent)
+   Striped lines: #354E41 #3B5B40 #588158 #A4B18B #DCD7CD #E1D8CD (Inter Bold)
+   Drone & name: #2A4B3C */
+:root {
+  /* Logo – drone & name */
+  --color-logo-primary: #2A4B3C;
+
+  /* Logo – striped lines (dark to light) */
+  --color-logo-stripe-1: #354E41;
+  --color-logo-stripe-2: #3B5B40;
+  --color-logo-stripe-3: #588158;
+  --color-logo-stripe-4: #A4B18B;
+  --color-logo-neutral-1: #DCD7CD;
+  --color-logo-neutral-2: #E1D8CD;
+
+  /* Aliases for components (same as logo) */
+  --color-brand-dark: #2A4B3C;
+  --color-brand-mid-dark: #354E41;
+  --color-brand-mid: #3B5B40;
+  --color-brand-mid-light: #588158;
+  --color-brand-light: #A4B18B;
+
+  /* Darker brown neutrals (page base) */
+  --color-neutral-warm: #b8a088;
+  --color-neutral-warm-alt: #d4c4a8;
+  --color-neutral-sand: #9a7b5c;
+  --color-neutral-surface: #e2d4c4;
+  --color-neutral-deep: #6b5344;
+
+  /* Semantic – logo green for accent, brown base */
+  --color-background: #d4c4a8;
+  --color-foreground: #2d2a24;
+  --color-surface: #e2d4c4;
+  --color-accent: #2A4B3C;
+  --color-accent-hover: #354E41;
+  --color-accent-soft: #3B5B40;
+  --color-muted: #3B5B40;
+  --color-border: #c4b298;
+  --color-border-strong: #9a7b5c;
+
+  /* Navbar & footer */
+  --color-navbar-bg: #d9c9b0;
+  --color-footer-bg: #d9c9b0;
+  --color-navbar-border: #b8a088;
+  --color-navbar-accent: #2A4B3C;
+  /* High-contrast link colors on navbar/footer brown */
+  --color-nav-link: #1a2520;
+  --color-nav-link-hover: #2A4B3C;
+  --color-nav-link-active: #2A4B3C;
+  --color-footer-link: #1a2520;
+  --color-footer-link-hover: #2A4B3C;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #3d3025;
+    --color-foreground: #E1D8CD;
+    --color-surface: #4a3c2e;
+    --color-accent: #A4B18B;
+    --color-accent-hover: #c9d4b8;
+    --color-muted: #A4B18B;
+    --color-border: #5c4a38;
+    --color-border-strong: #6f5d48;
+    --color-navbar-bg: #d9c9b0;
+    --color-footer-bg: #d9c9b0;
+    --color-navbar-border: #b8a088;
+    --color-navbar-accent: #2A4B3C;
+  }
+}
