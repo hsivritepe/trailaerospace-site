@@ -58,7 +58,7 @@ export function Navbar() {
                                     : 'hover:text-[var(--color-nav-link-hover)]'
                             }`}
                         >
-                            ENG
+                            EN
                         </button>
                         <span className="mx-1 opacity-60">|</span>
                         <button
@@ -70,7 +70,7 @@ export function Navbar() {
                                     : 'hover:text-[var(--color-nav-link-hover)]'
                             }`}
                         >
-                            TUR
+                            TR
                         </button>
                     </span>
                 </div>
