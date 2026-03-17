@@ -1,0 +1,176 @@
+/**
+ * Component styles – all theme-driven via CSS variables.
+ * Edit theme.css to change colors; no inline styles in components.
+ */
+
+/* ========== Global elements ========== */
+body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+/* ========== Nav links (header) ========== */
+.nav-link {
+    color: var(--color-nav-link);
+}
+.nav-link:hover {
+    color: var(--color-nav-link-hover);
+}
+
+/* ========== Footer links & dropdown ========== */
+footer .nav-link {
+    color: var(--color-footer-link);
+}
+footer .nav-link:hover {
+    color: var(--color-footer-link-hover);
+}
+footer .relative.inline-block {
+    color: var(--color-footer-link);
+}
+footer .dropdown-select {
+    border-color: var(--color-footer-link);
+    color: var(--color-footer-link);
+}
+footer .dropdown-select:focus {
+    box-shadow:
+        0 0 0 2px var(--color-footer-bg),
+        0 0 0 4px var(--color-footer-link-active);
+}
+
+/* ========== Layout (navbar, footer) ========== */
+.site-header {
+    color: var(--color-foreground);
+    background-color: #ffffff;
+}
+
+.site-footer {
+    color: var(--color-foreground);
+    background-color: var(--color-footer-bg);
+    border-color: var(--color-accent);
+}
+
+/* ========== Hero ========== */
+.hero-section {
+    background-color: var(--color-hero-bg);
+}
+
+.hero-overlay {
+    background: var(--color-hero-overlay);
+}
+
+.hero-panel {
+    border-color: var(--color-hero-panel-border);
+    background-color: var(--color-hero-panel-bg);
+    color: var(--color-hero-panel-text);
+}
+
+.hero-panel h1,
+.hero-panel p {
+    color: var(--color-hero-panel-text);
+}
+
+.hero-btn-primary {
+    background-color: var(--color-hero-btn-primary-bg);
+    color: var(--color-hero-btn-primary-text);
+}
+
+.hero-btn-primary:hover {
+    background-color: var(--color-hero-btn-primary-hover-bg);
+}
+
+.hero-btn-secondary {
+    border-color: var(--color-hero-btn-secondary-border);
+    color: var(--color-hero-btn-secondary-text);
+}
+
+.hero-btn-secondary:hover {
+    background-color: var(--color-hero-btn-secondary-hover-bg);
+    border-color: var(--color-hero-btn-secondary-hover-bg);
+    color: white;
+}
+
+/* ========== Homepage sections ========== */
+.image-feature-overlay-gradient {
+    background: var(--color-image-feature-overlay-gradient);
+}
+
+.image-feature-overlay {
+    background-color: var(--color-image-feature-overlay);
+}
+
+.image-feature-eyebrow {
+    color: var(--color-image-feature-eyebrow);
+}
+
+.section-bg {
+    background-color: var(--color-section-bg);
+}
+
+/* Featured product section – logo primary */
+.section-featured {
+    background-color: var(--color-logo-primary);
+    color: #ffffff;
+}
+
+.section-featured .section-featured-eyebrow {
+    color: var(--color-logo-neutral-2);
+}
+
+.section-featured .section-featured-heading {
+    color: #ffffff;
+}
+
+.section-featured .section-featured-muted {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Contact us + portal section – logo primary */
+.section-contact {
+    background-color: var(--color-logo-primary);
+}
+
+.cta-panel {
+    background: linear-gradient(
+        160deg,
+        var(--color-cta-panel-gradient-start),
+        var(--color-cta-panel-gradient-end)
+    );
+    color: white;
+}
+
+/* ========== Cards ========== */
+.product-card-bg {
+    background-color: var(--color-product-card-bg);
+}
+
+.product-card-overlay {
+    background: var(--color-product-card-overlay);
+}
+
+.service-card-image-overlay {
+    background: var(--color-service-card-image-overlay);
+}
+
+/* ========== Forms ========== */
+.contact-form {
+    color: var(--color-foreground);
+}
+
+.contact-form-submit {
+    background-color: var(--color-accent);
+}
+
+/* ========== Dropdowns (custom select, no native arrow) ========== */
+.dropdown-select {
+    background-image: none;
+}

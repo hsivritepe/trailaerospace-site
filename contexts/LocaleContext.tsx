@@ -12,10 +12,12 @@ import type { Locale } from "@/lib/translations";
 
 const STORAGE_KEY = "trail-locale";
 
+const VALID_LOCALES: Locale[] = ["en", "fr"];
+
 function getStoredLocale(): Locale {
   if (typeof window === "undefined") return "en";
   const stored = window.localStorage.getItem(STORAGE_KEY);
-  return stored === "tr" ? "tr" : "en";
+  return VALID_LOCALES.includes(stored as Locale) ? (stored as Locale) : "en";
 }
 
 type LocaleContextValue = {

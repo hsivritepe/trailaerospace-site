@@ -1,4 +1,4 @@
-export type Locale = "en" | "tr";
+export type Locale = "en" | "fr";
 
 export const translations = {
   en: {
@@ -13,21 +13,21 @@ export const translations = {
       trailAerospace: "Trail Aerospace",
       copyright: "All rights reserved.",
     },
-    lang: { en: "EN", tr: "TR" },
+    lang: { en: "EN", fr: "FR" },
   },
-  tr: {
+  fr: {
     nav: {
-      home: "Ana Sayfa",
-      products: "Ürünler",
-      services: "Hizmetler",
-      contact: "İletişim",
-      portal: "Portal",
+      home: "Accueil",
+      products: "Produits",
+      services: "Services",
+      contact: "Contact",
+      portal: "Portail",
     },
     footer: {
       trailAerospace: "Trail Aerospace",
-      copyright: "Tüm hakları saklıdır.",
+      copyright: "Tous droits réservés.",
     },
-    lang: { en: "EN", tr: "TR" },
+    lang: { en: "EN", fr: "FR" },
   },
 } as const;
 

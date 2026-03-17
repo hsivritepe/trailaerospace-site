@@ -14,11 +14,7 @@ export function ContactForm({ className = "" }: { className?: string }) {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className={`space-y-6 ${className}`}
-      style={{ color: "var(--color-foreground)" }}
-    >
+    <form onSubmit={handleSubmit} className={`contact-form space-y-6 ${className}`}>
       <div>
         <label htmlFor="name" className="block text-sm font-medium">
           Name
@@ -61,10 +57,7 @@ export function ContactForm({ className = "" }: { className?: string }) {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="rounded-md px-4 py-2 text-sm font-medium text-white transition-colors hover:opacity-90 disabled:opacity-60"
-        style={{
-          backgroundColor: "var(--color-accent)",
-        }}
+        className="contact-form-submit rounded-md px-4 py-2 text-sm font-medium text-white transition-colors hover:opacity-90 disabled:opacity-60"
       >
         {status === "sending" ? "Sending…" : status === "sent" ? "Sent" : "Send message"}
       </button>

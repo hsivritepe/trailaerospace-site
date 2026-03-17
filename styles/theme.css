@@ -1,69 +1,126 @@
-/* Trail Aerospace – logo palette (logo-with-name-transparent)
-   Striped lines: #354E41 #3B5B40 #588158 #A4B18B #DCD7CD #E1D8CD (Inter Bold)
-   Drone & name: #2A4B3C */
+/* Trail Aerospace – single palette
+   Logo ref: #2A4B3C (drone/name), stripes #354E41 #3B5B40 #588158 #A4B18B #DCD7CD #E1D8CD */
+
 :root {
-  /* Logo – drone & name */
-  --color-logo-primary: #2A4B3C;
+    --color-logo-primary: #2a4b3c;
+    --color-logo-stripe-1: #354e41;
+    --color-logo-stripe-2: #3b5b40;
+    --color-logo-stripe-3: #588158;
+    --color-logo-stripe-4: #a4b18b;
+    --color-logo-neutral-1: #dcd7cd;
+    --color-logo-neutral-2: #e1d8cd;
 
-  /* Logo – striped lines (dark to light) */
-  --color-logo-stripe-1: #354E41;
-  --color-logo-stripe-2: #3B5B40;
-  --color-logo-stripe-3: #588158;
-  --color-logo-stripe-4: #A4B18B;
-  --color-logo-neutral-1: #DCD7CD;
-  --color-logo-neutral-2: #E1D8CD;
+    --color-brand-dark: #2a4b3c;
+    --color-brand-mid-dark: #354e41;
+    --color-brand-mid: #3b5b40;
+    --color-brand-mid-light: #588158;
+    --color-brand-light: #a4b18b;
 
-  /* Aliases for components (same as logo) */
-  --color-brand-dark: #2A4B3C;
-  --color-brand-mid-dark: #354E41;
-  --color-brand-mid: #3B5B40;
-  --color-brand-mid-light: #588158;
-  --color-brand-light: #A4B18B;
+    /* MAIN UI – white bg, stripe 2 for text on white */
+    --color-background: #ffffff;
+    --color-foreground: var(--color-logo-stripe-2);
+    --color-surface: #ffffff;
 
-  /* Darker brown neutrals (page base) */
-  --color-neutral-warm: #b8a088;
-  --color-neutral-warm-alt: #d4c4a8;
-  --color-neutral-sand: #9a7b5c;
-  --color-neutral-surface: #e2d4c4;
-  --color-neutral-deep: #6b5344;
+    --color-accent: #2a4b3c;
+    --color-accent-hover: #354e41;
+    --color-accent-soft: #588158;
 
-  /* Semantic – logo green for accent, brown base */
-  --color-background: #d4c4a8;
-  --color-foreground: #2d2a24;
-  --color-surface: #e2d4c4;
-  --color-accent: #2A4B3C;
-  --color-accent-hover: #354E41;
-  --color-accent-soft: #3B5B40;
-  --color-muted: #3B5B40;
-  --color-border: #c4b298;
-  --color-border-strong: #9a7b5c;
+    --color-muted: var(--color-logo-stripe-3);
 
-  /* Navbar & footer */
-  --color-navbar-bg: #d9c9b0;
-  --color-footer-bg: #d9c9b0;
-  --color-navbar-border: #b8a088;
-  --color-navbar-accent: #2A4B3C;
-  /* High-contrast link colors on navbar/footer brown */
-  --color-nav-link: #1a2520;
-  --color-nav-link-hover: #2A4B3C;
-  --color-nav-link-active: #2A4B3C;
-  --color-footer-link: #1a2520;
-  --color-footer-link-hover: #2A4B3C;
+    --color-border: #e1d8cd;
+    --color-border-strong: #c9c0b3;
+
+    /* NAV – header white, nav text stripe 1 (readable on white); footer stripe-2 bg */
+    --color-navbar-bg: #ffffff;
+    --color-footer-bg: var(--color-logo-stripe-2);
+    --color-navbar-border: #e1d8cd;
+
+    --color-nav-link: #354e41;
+    --color-nav-link-hover: #2a4b3c;
+    --color-nav-link-active: #354e41;
+
+    --color-footer-link: #e1d8cd;
+    --color-footer-link-hover: #ffffff;
+    --color-footer-link-active: #ffffff;
+
+    /* HERO – panel has light bg, text stripe 1 for readability */
+    --color-hero-bg: #fafaf9;
+    --color-hero-panel-border: rgba(42, 75, 60, 0.3);
+    --color-hero-panel-bg: rgba(255, 255, 255, 0.85);
+    --color-hero-panel-text: #354e41;
+
+    --color-hero-btn-primary-bg: #2a4b3c;
+    --color-hero-btn-primary-text: #ffffff;
+    --color-hero-btn-primary-hover-bg: #354e41;
+
+    --color-hero-btn-secondary-border: #2a4b3c;
+    --color-hero-btn-secondary-text: #2a4b3c;
+    --color-hero-btn-secondary-hover-bg: #e1d8cd;
+
+    --color-cta-panel-gradient-start: #354e41;
+    --color-cta-panel-gradient-end: #588158;
+
+    --color-image-feature-eyebrow: #588158;
+    --color-image-feature-overlay: rgba(20, 30, 25, 0.6);
+
+    --color-product-card-bg: #ffffff;
+    --color-product-card-overlay: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.92),
+        rgba(225, 216, 205, 0.25),
+        rgba(250, 248, 245, 0.95)
+    );
+
+    --color-hero-overlay: linear-gradient(
+        135deg,
+        rgba(47, 35, 25, 0.5),
+        rgba(83, 62, 40, 0.35),
+        rgba(29, 22, 17, 0.55)
+    );
+    --color-section-bg: #ffffff;
+    --color-image-feature-overlay-gradient: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.4),
+        rgba(225, 216, 205, 0.35),
+        rgba(255, 255, 255, 0.45)
+    );
+    --color-service-card-image-overlay: linear-gradient(
+        135deg,
+        rgba(80, 60, 45, 0.2),
+        rgba(45, 35, 28, 0.35)
+    );
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #3d3025;
-    --color-foreground: #E1D8CD;
-    --color-surface: #4a3c2e;
-    --color-accent: #A4B18B;
-    --color-accent-hover: #c9d4b8;
-    --color-muted: #A4B18B;
-    --color-border: #5c4a38;
-    --color-border-strong: #6f5d48;
-    --color-navbar-bg: #d9c9b0;
-    --color-footer-bg: #d9c9b0;
-    --color-navbar-border: #b8a088;
-    --color-navbar-accent: #2A4B3C;
-  }
-}
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #1a1a1a;
+        --color-foreground: #e8e6e3;
+        --color-surface: #252525;
+
+        --color-accent: #588158;
+        --color-accent-hover: #a4b18b;
+        --color-accent-soft: #3b5b40;
+
+        --color-muted: #9ca39a;
+
+        --color-border: #3a3a3a;
+        --color-border-strong: #4a5c4a;
+
+        --color-navbar-bg: #252525;
+        --color-footer-bg: var(--color-logo-stripe-2);
+        --color-navbar-border: #3a3a3a;
+        --color-navbar-accent: #588158;
+
+        --color-nav-link: #e8e6e3;
+        --color-nav-link-hover: #a4b18b;
+        --color-nav-link-active: #588158;
+
+        --color-footer-link: #e1d8cd;
+        --color-footer-link-hover: #ffffff;
+        --color-footer-link-active: #ffffff;
+
+        --color-hero-bg: #1a1a1a;
+        --color-hero-btn-primary-text: #1a1a1a;
+        --color-hero-btn-secondary-hover-bg: #354e41;
+    }
+} */

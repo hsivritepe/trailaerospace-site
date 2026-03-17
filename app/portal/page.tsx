@@ -11,9 +11,7 @@ export default function PortalPage() {
     <main className="min-h-screen bg-[var(--color-background)] pb-20 pt-28">
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="rounded-[2rem] border border-[var(--color-border)] p-8 shadow-[0_24px_60px_rgba(110,80,52,0.15)] sm:p-10"
-            style={{ background: 'linear-gradient(160deg, #8f7055, #6f5440)', color: 'white' }}
-          >
+          <div className="cta-panel rounded-4xl border border-[var(--color-border)] p-8 shadow-[0_24px_60px_rgba(0,0,0,0.1)] sm:p-10">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
               Customer portal
             </p>
@@ -29,7 +27,7 @@ export default function PortalPage() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-8 shadow-[0_18px_45px_rgba(20,34,28,0.08)] sm:p-10">
+          <div className="rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-8 shadow-[0_18px_45px_rgba(0,0,0,0.08)] sm:p-10">
             <h2 className="text-2xl text-[var(--color-foreground)]">Sign in</h2>
             <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">
               Placeholder form for your existing sign-in flow.
