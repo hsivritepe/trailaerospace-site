@@ -1,10 +1,8 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { HeroVideo } from '@/components/HeroVideo';
 import { ProductCard } from '@/components/ProductCard';
 import { ServiceCard } from '@/components/ServiceCard';
 import {
-    homeImageFeature,
     portalHighlights,
     productHighlight,
     services,
@@ -14,34 +12,6 @@ export default function Home() {
     return (
         <main className="min-h-screen bg-[var(--color-background)]">
             <HeroVideo />
-            <section className="relative min-h-[min(78vh,720px)] overflow-hidden border-y-1 border-[var(--color-accent)]">
-                <div className="absolute inset-0">
-                    <Image
-                        src={homeImageFeature.imageSrc}
-                        alt=""
-                        fill
-                        className="object-cover"
-                        sizes="100vw"
-                    />
-                    <div
-                        className="image-feature-overlay-gradient absolute inset-0"
-                        aria-hidden
-                    />
-                </div>
-                <div className="relative mx-auto flex min-h-[min(78vh,720px)] max-w-6xl flex-col justify-center px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-                    <div className="bg-black/40 max-w-3xl rounded-4xl border-2 border-white/40 p-8 shadow-xl backdrop-blur-sm">
-                        <p className="font-bold text-xs uppercase tracking-[0.3em]">
-                            {homeImageFeature.eyebrow}
-                        </p>
-                        <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl [text-shadow:0_2px_12px_rgba(0,0,0,0.5)]">
-                            {homeImageFeature.title}
-                        </h2>
-                        <p className="mt-5 text-sm leading-7 text-white/90 sm:text-base [text-shadow:0_1px_6px_rgba(0,0,0,0.4)]">
-                            {homeImageFeature.description}
-                        </p>
-                    </div>
-                </div>
-            </section>
             <section className="section-featured px-4 py-20 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-6xl">
                     <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">

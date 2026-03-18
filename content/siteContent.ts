@@ -1,9 +1,7 @@
 export const heroVideo = {
-  src: "https://lorem.video/720p_h264_15s.mp4",
-  eyebrow: "Home",
   title: "Placeholder hero video ready for future updates",
   description:
-    "The homepage now starts with a single video hero. You can later swap this source or expand it with additional homepage media.",
+    "The homepage now starts with a Ken Burns background image (slow pan/zoom). You can later swap the asset, tune the motion, or replace it with a real video.",
 };
 
 export const homeImageFeature = {
